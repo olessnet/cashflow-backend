@@ -1,0 +1,16 @@
+servers:
+  devbox: localhost
+#  devbox: 10.0.0.143
+#  devbox: 192.168.68.103
+
+spring:
+  data:
+    mongodb:
+      database: organization-service
+      host: ${servers.devbox}
+      port: 27017
+      auto-index-creation: true
+
+services:
+  elastic-search:
+    base-url: http://${servers.devbox}:19200

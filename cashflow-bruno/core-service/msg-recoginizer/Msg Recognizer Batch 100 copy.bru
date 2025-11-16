@@ -1,0 +1,30 @@
+meta {
+  name: Msg Recognizer Batch 100 copy
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{core-service}}/core/v1/msg/recognize/batch
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "reqBatch": [
+          {
+              "id": "0d7d438b75abb131c6bf828fccdeccd8",
+              "header": "FEDBNK",
+              "body": "Rs 1 credited to your A/c XX0559 via IMPS on 08OCT2025 01:45:33 IMPS Ref no 528101176322 Bal:Rs 14692.24 -Federal Bank",
+              "timestamp": 1759868141184
+          },
+          {
+              "id": "bc3ac35bc902b174c91e362b1039bfa2",
+              "header": "ICICIT",
+              "body": "ICICI Bank Acct XX467 debited with Rs 1.00 on 08-Oct-25 & Acct XX559 credited.IMPS:528101176322. Call 18002662 for dispute or SMS BLOCK 467 to 9215676766",
+              "timestamp": 1759868136252
+          }
+      ]
+  }
+}

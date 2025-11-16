@@ -1,0 +1,15 @@
+meta {
+  name: Template Metrics
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{core-service}}/core/admin/v1/msg-template-performance-monitor
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,37 @@
+meta {
+  name: Create Message Template
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{core-service}}/core/v1/message-template-creator
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "header": "FEDBNK",
+    "fiChannel": "BANK",
+    "fiMsgIntent": "DEBIT",
+    "patternExpression":"Rs (.+) debited from your A\\\/c using UPI on (.+) to VPA (.+) - \\(UPI Ref No (.+)\\)-Federal Bank.",
+    "patternCaseSensitive":true,
+    "patternFullTextSearch":true,
+    "dataFieldMapping": {
+        "DATE": 0,
+        "TIME": 1,
+        "AMOUNT": 2,
+        "MERCHANT_ID": 3
+    },
+    "dateFormat":null,
+    "timeFormat":null,
+    "sampleData": "Rs 200.00 debited from your A/c using UPI on 23-11-2023 00:53:53 to VPA highwaydelupionline@ybl - (UPI Ref No 332726842032)-Federal Bank.",
+    "ignoreTemplate":false,
+    "ignoreMsg":false
+  }
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,28 @@
+meta {
+  name: Msg Data Fields
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{core-service}}/core/v1/msg-template-test/data-fields
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "pattern": {
+      "caseSensitive": false,
+      "fullTextSearch": true,
+      "expression": "Rs (.+) debited (.+) UPI on (.+) to VPA (.+) - (.+) Ref No (.+)-(.+)"
+    },
+    "dataFieldMapping": {
+        "AMOUNT": 1,
+        "DATETIME": 3,
+        "PARTICIPANT_FID": 4,
+        "REFERENCE_ID": 6
+    },
+    "sampleData": "Rs 200.00 debited from your A/c using UPI on 23-11-2023 00:53:53 to VPA highwaydelupionline@ybl - (UPI Ref No 332726842032)-Federal Bank."
+  }
+}

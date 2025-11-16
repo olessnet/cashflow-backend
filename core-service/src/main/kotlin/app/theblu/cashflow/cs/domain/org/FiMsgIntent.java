@@ -1,0 +1,8 @@
+package app.theblu.cashflow.cs.domain.org;
+
+public enum FiMsgIntent {
+    CREDIT, DEBIT, AUTO_DEBIT, DEBIT_REVERSAL, AUTO_DEBIT_REMAINDER,
+    CREDIT_REVERSAL,
+    BILL_REMAINDER,
+    BALANCE, ALERT, INFO, GREETINGS, PROMOTIONAL, UNKNOWN, OTHERS
+}

@@ -1,0 +1,26 @@
+# Order of the versions is very important
+# Lastest version are always added to top of the file
+# versionFrom should always be less or equal to than versionTo
+# validityStart should always be less than or equal to validityEnd
+# Previous version versionTo should less than next version versionTo range
+# Previous version validityStart date must be before next version validityStart date
+# Previous version validityEnd date must be before next version validityEnd date
+
+
+- state: ACTIVE
+  versionFrom: 0.0.9
+  versionTo: 0.0.9
+  validityEnd: '2025-12-14'
+  validityStart: '2025-02-01'
+
+- state: DEPRECATED
+  versionFrom: 0.0.9
+  versionTo: 0.0.9
+  validityEnd: '2025-12-13'
+  validityStart: '2025-01-01'
+
+- state: BLOCKED
+  versionFrom: 0.0.0
+  versionTo: 0.0.8
+  validityEnd: '2024-12-11'
+  validityStart: '2024-12-10'

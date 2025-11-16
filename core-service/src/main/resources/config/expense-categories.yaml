@@ -1,0 +1,549 @@
+### Each category group (parent & it's child categories) must be separated by ##### SPLIT #####
+### First Category in each category become parent category for all the following categories in the group
+
+# Theme Park/Zoo
+# Emergency Fund
+
+##### SPLIT #####
+
+- id: '001'
+  name: Uncategorized Expense
+  description:
+  icon: category/question
+
+##### SPLIT #####
+
+- id: '101'
+  name: Unknown Expense
+  description:
+  icon: category/question
+
+
+##### SPLIT #####
+
+- id: 'JWARGO'
+  name: Family
+  description:
+  icon: category/family
+  examples: "Family Expense"
+
+- id: 'HRGGXV'
+  name: Grocery/Vegetables
+  description:
+  icon: category/basket-shopping
+  examples: "Groceries, Vegetables, Meat, Dairy, Eggs"
+
+- id: 'GGXKJW'
+  name: House Rent/Maintenance
+  description:
+  icon: category/house-chimney
+  examples: "House Rent, House Maintenance, Property Tax, Home Insurance"
+
+- id: 'PGHOUV'
+  name: Home Services
+  description: Maid/Driver/Cleaning
+  icon: category/user-tie-hair-long
+  examples: "Maid Salary, Driver Salary, House Cleaning, Plumbing Service"
+
+- id: 'OLVWQD'
+  name: Utility Bills
+  description: Gas/EB/Internet/Mobile/Water
+  icon: category/receipt
+  examples: "Gas Bill, EB Bill, Internet Bill, Mobile Bill, Water Bill, Sewer Bill, Cable/Streaming Bill, Waste Removel, Magazine"
+
+
+- id: 'UTGGYF'
+  name: Parents/Dependant Care
+  description:
+  icon: category/people-pants-simple
+  examples: "Parents Medical Care, Parents Maintenance Amount, Parental Insurance"
+
+##### SPLIT #####
+
+- id: 'DSSXNH'
+  name: Child Care
+  description:
+  icon: category/child-reaching
+  examples: "Daycare, Babysitting, Nanny services, Child Allowance"
+
+- id: 'KDQQWN'
+  name: Child Education
+  description:
+  icon: category/child-reaching
+  examples: "College Fee, School Fee, Tuition Fee, Stationary Expense, Daycare Toys"
+
+- id: 'LCDQRG'
+  name: Extracurricular Activities
+  description:
+  icon: category/child-reaching
+  examples: "Music Classes, Sports Classes, Summer Camp"
+
+- id: 'FFREOK'
+  name: Toys
+  description:
+  icon: category/child-reaching
+  examples: "Toys"
+
+##### SPLIT #####
+
+- id: 'TWVPSR'
+  name: Pets/Pet Care
+  description:
+  icon: category/cat
+  examples: "Pet Insurance"
+
+- id: 'WVKUFA'
+  name: Pet Supplies
+  description:
+  icon: category/cat
+  examples: "Pet Food, Pet Toys, Pet Other Supplies"
+
+- id: 'MZMPUR'
+  name: Pet Veterinary
+  description:
+  icon: category/cat
+  examples: "Pet Medicine, Veterinary Visits"
+
+##### SPLIT #####
+
+- id: 'KXOJCE'
+  name: Food
+  description:
+  icon: category/bowl-hot
+  examples: "Breakfast, Lunch, Dinner, Snakes, Juice, Diet Food"
+
+- id: 'HJLCON'
+  name: Small Food Shops
+  description:
+  icon: category/shop
+  examples: "Breakfast, Lunch, Dinner, Fast Food"
+
+- id: 'RQBXMT'
+  name: Restaurant/Cafe
+  description:
+  icon: category/utensils
+  examples: "Breakfast, Lunch, Dinner, Cafes, Restaurant"
+
+- id: 'DAKIAT'
+  name: Snakes/Juice
+  description:
+  icon: category/store
+  examples: "Snakes, Juice, Coffee, Tea, Chocolates, Numkins"
+
+- id: 'JFZPJN'
+  name: Diet/Healthy Foods
+  description:
+  icon: category/apple-whole
+  examples: "Diet Food, Diet Fruits, Diet Snakes"
+
+##### SPLIT #####
+
+- id: 'QOJASY'
+  name: Shopping
+  description:
+  icon: category/cart-shopping-fast
+  examples: "Online Shopping, Electronics Shopping, Mall Shopping"
+
+- id: 'WOLQOU'
+  name: Electronics
+  description:
+  icon: category/computer-mouse
+  examples: "Mobile Phone, Laptop, Desktop, Accessories"
+
+- id: 'XCNTPD'
+  name: Online Shopping
+  description:
+  icon: category/at
+  examples: ""
+
+- id: 'MQKMEE'
+  name: Apps/Apps Subscriptions
+  description:
+  icon: category/microchip-ai
+  examples: "Adobe Subscription, Truecaller Subscription"
+
+##### SPLIT #####
+
+- id: 'HQCFXD'
+  name: Fun/Friends
+  description:
+  icon: category/champagne-glasses
+  examples: "Friends Outing, Team Outing, Movie, Pubs, Trip with Friends"
+
+- id: 'PCPJGO'
+  name: Movies/Concerts/Events
+  description:
+  icon: category/camera-movie
+  examples: "Movie, Theater, Concerts, Entertainment Event"
+
+- id: 'KUIOUJ'
+  name: Gaming
+  description:
+  icon: category/wine-glass-crack
+  examples: "Video Games, Game Subscriptions, Console Purchase"
+
+- id: 'BOELYJ'
+  name: Social
+  description:
+  icon: category/wine-glass-crack
+  examples: "Social Parties, Dating Expenses, Social Outings"
+
+- id: 'TWUIUL'
+  name: Liquor/Bar/Pub
+  description:
+  icon: category/wine-glass-crack
+  examples: "Bar, Pub, Liquor, Smoking"
+
+##### SPLIT #####
+
+- id: 'OUHYQW'
+  name: Medical
+  description:
+  icon: category/heart-pulse
+  examples: "Doctor fee, Hospitalization Fee, Pharmacy, Lab Tests, Health Insurance, Term Insurance"
+
+- id: 'AFNGZN'
+  name: Doctor/Hospital
+  description:
+  icon: category/user-doctor
+  examples: "Doctor fee, Hospitalization Fee"
+
+- id: 'PTFFYD'
+  name: Pharmacy
+  description:
+  icon: category/hospital
+  examples: "Over-the-counter medicines, Vitamins, Supplements"
+
+- id: 'TBOLSB'
+  name: Lab Tests
+  description:
+  icon: category/microscope
+  examples: "Lab Tests"
+
+- id: 'HWEEYR'
+  name: Insurance
+  description: Health/Term Insurance
+  icon: category/hand-holding-heart
+  examples: "Health Insurance, Term Insurance"
+
+##### SPLIT #####
+
+- id: 'BHEIMN'
+  name: Personal Care
+  description:
+  icon: category/user-cowboy
+  examples: ""
+
+- id: 'XTXCBE'
+  name: Grooming
+  description: Personal Care/Beauty Products
+  icon: category/mustache
+
+- id: 'VIAVZO'
+  name: Apparel Shopping
+  description:
+  icon: category/shirt
+  examples: "Clothes, Shoes, Wearable"
+
+- id: 'BOESXU'
+  name: Wellness
+  description:
+  icon: category/spray-can-sparkles
+  examples: "Massages, Spa, Wellness Treatment"
+
+##### SPLIT #####
+
+- id: 'PPQROZ'
+  name: Fitness
+  description:
+  icon: category/person-running
+  examples: "Gym Fee, Badminton, Cricket, Swimming, Protein Powder, Sports Wear"
+
+- id: 'CSRVHQ'
+  name: Gym
+  description:
+  icon: category/dumbbell
+  examples: "Gym Fee, Gym Equipment"
+
+- id: 'LQFQRO'
+  name: Outdoor Activities
+  description:
+  icon: category/basketball # search
+  examples: "Park, Sports, Badminton, Cricket, Swimming"
+
+- id: 'TIIPCB'
+  name: Fitness Food/Products
+  description:
+  icon: category/cup-straw-swoosh
+  examples: "Protein Powder, Sports Wear"
+
+##### SPLIT #####
+
+- id: 'ZEHKUP'
+  name: Vehicle
+  description:
+  icon: category/car-mirrors
+  examples: "Fuel, Car Electric Charging, Vehicle Service, Vehicle Insurance Renewal, Parking Fee, Toll Fee"
+
+- id: 'VCORAE'
+  name: Fuel
+  description:
+  icon: category/gas-pump
+  examples: "Fuel"
+
+- id: 'OCBRIL'
+  name: Charging Station
+  description:
+  icon: category/charging-station
+  examples: "Car Electric Charging"
+
+- id: 'HCGJCE'
+  name: Maintenance/Insurance
+  description:
+  icon: category/wrench
+  examples: "Vehicle Service, Vehicle Insurance Renewal, New Tyres, Oil Change"
+
+- id: 'CTTLCP'
+  name: Parking/Toll
+  description:
+  icon: category/square-parking    # search
+  examples: "Parking, Toll"
+
+##### SPLIT #####
+
+- id: 'RIXAXE'
+  name: Transportation
+  description:
+  icon: category/road
+  examples: "Trips, Hotel Stay, Public Transport"
+
+- id: 'RXGETE'
+  name: Public Transport
+  description:
+  icon: category/bus
+  examples: "Public, Rail, Metro, Bus, Tram"
+
+- id: 'CLZUGW'
+  name: Private Transport
+  description:
+  icon: category/taxi
+  examples: "Uber, Ola, Rapido, Cab"
+
+- id: 'HIVJYP'
+  name: Ride-sharing
+  description:
+  icon: category/taxi
+  examples: "Uber, Ola, Rapido, Cab"
+
+- id: 'RJXKJR'
+  name: Air Tickets
+  description:
+  icon: category/plane-up
+  examples: "Flight Tickets"
+
+##### SPLIT #####
+
+- id: 'WMUCPC'
+  name: Trips/Vacations
+  description:
+  icon: category/bed
+  examples: "Hotel Stay"
+
+- id: 'ELOCOY'
+  name: Hotels
+  description:
+  icon: category/bed
+  examples: "Hotel Stay"
+
+- id: 'WMUCP1'
+  name: Entry Fee
+  description:
+  icon: category/bed
+  examples: "Entry Fee"
+
+- id: 'ZLBPKF'
+  name: Self Driving/Rentals
+  description:
+  icon: category/steering-wheel
+  examples: "Rental Car, Self Driving"
+
+##### SPLIT #####
+
+- id: 'KLQYVP'
+  name: Education
+  description:
+  icon: category/book-open-cover
+  examples: "Books, Course Fee, Course Subscription"
+
+- id: 'MNLBTB'
+  name: Books
+  description:
+  icon: category/book-blank
+  examples: "Ebook Purchase, Book Purchase, EPub Purchase"
+
+- id: 'OWBMRV'
+  name: Tuition Fee/Other Fee
+  description:
+  icon: category/book-section
+  examples: "Offline Course Fee, Online Course Fee, Online Course Subscription"
+
+##### SPLIT #####
+
+- id: 'UNBFIH'
+  name: Investments/Savings
+  description:
+  icon: category/badge-dollar
+  examples: "Child Education Savings"
+
+- id: 'NUDAGD'
+  name: Bonds/Stocks/Mutual Funds
+  description:
+  icon: category/money-check-dollar
+  examples: "Mutual Funds, Stocks, SIP"
+
+- id: 'QSAQJF'
+  name: Gold
+  description:
+  icon: category/coin-blank
+  examples: "Gold Coins, Gold Ornaments"
+
+- id: 'PTKDBQ'
+  name: FD/RD
+  description:
+  icon: category/money-bill-trend-up
+  examples: "Fixed Deposit, Recurring Deposit"
+
+- id: 'OBQEZO'
+  name: Chit Fund
+  description:
+  icon: category/chit
+  examples: "Chit Fund"
+
+- id: 'VLHDQL'
+  name: Govt Schemes
+  description:
+  icon: category/chit
+  examples: "Chit Fund"
+
+- id: 'GMGEZW'
+  name: Retirement Savings
+  description:
+  icon: category/chit
+  examples: ""
+
+- id: 'ZJTUKT'
+  name: Emergency Funds
+  description:
+  icon: category/chit
+  examples: ""
+
+##### SPLIT #####
+
+- id: 'RNUCWF'
+  name: Bank/Loan
+  description:
+  icon: category/loan-emi-repayment
+  examples: "Other Emi Payments"
+
+- id: 'RACILI'
+  name: Credit Card Bill
+  description:
+  icon: category/credit-card
+  examples: "Credit Card Bill Payment"
+
+- id: 'OPDLXH'
+  name: Loan Repayment
+  description:
+  icon: category/file-invoice-dollar
+  examples: "Loan Emi Payment, Loan Part Payment, Loan Foreclosure Payment, Student Loan, Personal Loan, Housing Loan"
+
+- id: 'NKHRSX'
+  name: Debt Repayment
+  description:
+  icon: category/hand-holding-circle-dollar
+  examples: "Debt Repayment"
+
+- id: 'MBMGFV'
+  name: Bank Fees
+  description:
+  icon: category/hand-holding-circle-dollar
+  examples: "Overdraft fees, Monthly Service Charges, ATM fees"
+
+
+##### SPLIT #####
+
+- id: 'FPVOSQ'
+  name: Transfer/Payments
+  description:
+  icon: category/money-bill-transfer
+  examples: "Self Transfer, Bill Payments, Lending"
+
+- id: 'GMJALR'
+  name: Account Transfer
+  description:
+  icon: category/account-transfer    # search
+  examples: "Self Transfer, Account Transfer"
+
+- id: 'GCSIQS'
+  name: Cash Withdrawal
+  description:
+  icon: category/money-simple-from-bracket
+  examples: "Cash Withdrawal"
+
+- id: 'EINIOH'
+  name: Lending
+  description:
+  icon: category/hand-holding-circle-dollar
+  examples: "Lending"
+
+##### SPLIT #####
+
+- id: 'LGRZPZ'
+  name: Business Expense
+  description:
+  icon: category/briefcase-arrow-right
+  examples: "Business Expense"
+
+##### SPLIT #####
+
+- id: 'VOHTAF'
+  name: Others/Miscellaneous
+  description:
+  icon: category/circle-half-stroke
+  examples: ""
+
+- id: 'EGIGUF'
+  name: Donations
+  description:
+  icon: category/hands-holding-dollar
+  examples: "Charity, Donations"
+
+- id: 'VRJIQT'
+  name: Gifts
+  description:
+  icon: category/gift
+  examples: ""
+
+- id: 'JXYWUP'
+  name: Devotional/Temple
+  description:
+  icon: category/hands-praying
+  examples: ""
+
+- id: 'JPVBLA'
+  name: Tax
+  description:
+  icon: category/badge-percent
+  examples: "Income Tax"
+
+- id: 'STCIBE'
+  name: Professional/Legal Fees
+  description:
+  icon: category/badge-percent
+  examples: "Traffic Challan, Lawyer Expense, Accounting Services, Financial Advisor Costs"
+
+- id: 'FBVMCL'
+  name: Unexpected Costs
+  description:
+  icon: category/badge-percent
+  examples: "Unplanned Expenses"

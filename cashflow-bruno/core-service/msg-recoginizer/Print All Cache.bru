@@ -1,0 +1,15 @@
+meta {
+  name: Print All Cache
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{core-service}}/core/v1/unknown-message-analyzer/print-all-cache-details
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

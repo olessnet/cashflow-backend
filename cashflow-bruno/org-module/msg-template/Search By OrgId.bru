@@ -1,0 +1,18 @@
+meta {
+  name: Search By OrgId
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{core-service}}/core/v1/msg-templates/search
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "term":"9fb6ba2cfbe3a2555425ca4cba2eccfc",
+      "searchBy":"ORG_ID"
+  }
+}

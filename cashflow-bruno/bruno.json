@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "cashflow-bruno",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

@@ -1,0 +1,59 @@
+### Each category group (parent & it's child categories) must be separated by ##### SPLIT #####
+### First Category in each category become parent category for all the following categories in the group
+
+
+##### SPLIT #####
+
+- id: '002'
+  name: Uncategorized Income
+  description:
+  icon: category/user-salary # search
+
+##### SPLIT #####
+
+- id: '102'
+  name: Unknown Income
+  description:
+  icon: category/question
+
+##### SPLIT #####
+
+- id: 'HDYLCI'
+  name: Salary
+  description:
+  icon: category/user-salary # search
+
+##### SPLIT #####
+
+- id: 'LEPEPQ'
+  name: Business Income
+  description:
+  icon: category/briefcase-arrow-left # search
+
+##### SPLIT #####
+
+- id: 'VNFYYW'
+  name: Social Media Income
+  description: Youtube/Insta/Facebook
+  icon: category/youtube # search
+
+##### SPLIT #####
+
+- id: 'ZYRKMT'
+  name: Borrowing
+  description:
+  icon: category/hand-holding-circle-dollar # search
+
+##### SPLIT #####
+
+- id: 'RQOELD'
+  name: Debt Collection
+  description:
+  icon: category/hand-holding-circle-dollar # search
+
+##### SPLIT #####
+
+- id: 'VTVBZS'
+  name: Account Transfer
+  description:
+  icon: category/hand-holding-circle-dollar # search

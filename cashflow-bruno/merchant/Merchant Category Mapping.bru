@@ -1,0 +1,19 @@
+meta {
+  name: Merchant Category Mapping
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{core-service}}/core/v1/merchant/vote-on-category
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "merchantId":"KFC LTD",
+    "categoryId": "AUP",
+    "userId": "2"
+  }
+}

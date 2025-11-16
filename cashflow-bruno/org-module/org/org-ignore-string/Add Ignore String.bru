@@ -1,0 +1,22 @@
+meta {
+  name: Add Ignore String
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{core-service}}/core/v1/org-ignore-string/add
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "header":"INDUSB",
+    "ignoreString":["test"]
+  }
+}
+
+settings {
+  encodeUrl: true
+}

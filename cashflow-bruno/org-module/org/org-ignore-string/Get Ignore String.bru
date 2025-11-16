@@ -1,0 +1,19 @@
+meta {
+  name: Get Ignore String
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{core-service}}/core/v1/org-ignore-string/:header
+  body: none
+  auth: inherit
+}
+
+params:path {
+  header: INDUSB
+}
+
+settings {
+  encodeUrl: true
+}

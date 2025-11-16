@@ -1,0 +1,26 @@
+meta {
+  name: Org Search Header
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{core-service}}/core/v1/org/searchByHeader/:header
+  body: json
+  auth: none
+}
+
+params:path {
+  header: JPRIME
+}
+
+body:json {
+  {
+    "searchTerm":"FEDBNK",
+    "searchBy":"HEADER"
+  }
+  
+  //     public static enum SearchBy {
+  //         ID, NAME, SHORT_NAME, HEADER
+  //     }
+}

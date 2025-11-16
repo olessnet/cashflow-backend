@@ -1,0 +1,20 @@
+meta {
+  name: Msg Positional Data
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{core-service}}/core/v1/msg-template-tester/positional-data
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "caseSensitive": true,
+      "fullTextSearch": true,
+      "expression": "Rs (.+) sent via UPI on 17-09-2025 at 00:16:10 to BOODALA HIMANTH.Ref:166018565274.Not you? Call 18004251199/SMS BLOCKUPI to 98950 88888 -Federal Bank",
+    "sampleData": "Rs 99999.00 sent via UPI on 17-09-2025 at 00:16:10 to BOODALA HIMANTH.Ref:166018565274.Not you? Call 18004251199/SMS BLOCKUPI to 98950 88888 -Federal Bank"
+  }
+}

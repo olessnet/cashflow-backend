@@ -1,0 +1,37 @@
+meta {
+  name: Create Template Copy
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{core-service}}/core/v1/msg-templates
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "ignore": false,
+    "orgId": "090662968a0993bb285886a2dbae3fab",
+    "orgOperation": "UPI",
+    "msgType": "DEBIT",
+    "pattern": {
+      "caseSensitive": false,
+      "inverse": false,
+      "fullTextSearch": true,
+      "expression": "ICICI Bank Acct (X+\\d+) debited for Rs (\\d[0-9,]+.\\d+) on (.+); (.+) credited. UPI:(.+). Call(.+)",
+      "dataFieldMapping": {
+        "amount": "$2",
+        "referenceId": "$5",
+        "participantAccountId": "$4",
+        "myAccountId": "$1"
+      },
+      "sampleData": [
+        "ICICI Bank Acct XX467 debited for Rs 187.27 on 02-Dec-23; Vi credited. UPI:333665108368. Call 18002662 for dispute. SMS BLOCK 467 to 9215676766."
+      ]
+    },
+    "metaData": {},
+    "createdAt": 1702531575
+  }
+}

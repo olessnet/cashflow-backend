@@ -1,0 +1,22 @@
+meta {
+  name: Msg Recognizer
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{core-service}}/core/v1/msg/recognize
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "msg": {
+          "id":"02ac85bc8314a6ca6df359cff2f9b569",
+          "header":"ICICIT",
+          "body": "Rs 18,636.72 spent on ICICI Bank Card XX4001 on 26-Sep-25 at Amazon.co.jp. Avl Lmt: Rs 2,59,635.35. To dispute, call 18002662/SMS BLOCK 4001 to 9215676766. To convert this txn to EMI give a missed call on 9537667667. Know more about EMI conversion at icici.co/DUvfZI0QFMW",
+          "timestamp": 1759661555000
+      }
+  }
+}

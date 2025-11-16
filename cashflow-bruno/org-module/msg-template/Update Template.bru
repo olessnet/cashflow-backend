@@ -1,0 +1,40 @@
+meta {
+  name: Update Template
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{core-service}}/core/v1/msg-templates
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "id": "01K6Z6M6CWK27ZVZ118NN307R1",
+    "orgId": "090662968a0993bb285886a2dbae3fab",
+    "fiChannel": "BANK",
+    "fiMsgIntent": "DEBIT",
+      "patternExpression": "^ICICI Bank Acct (.+) debited with (.+) (.+) on (.+) & Acct (.+) credited(.+) Call (.+)",
+    "patternCaseSensitive": true,
+    "patternFullTextSearch": true,
+    "dataFieldMapping": {
+      "REFERENCE_ID": 5,
+      "DATE": 3,
+      "MERCHANT_ID": 4,
+      "MY_ACCOUNT_ID": 0,
+      "CURRENCY_CODE": 1,
+      "AMOUNT": 2
+    },
+    "dateFormat": "dd-MMM-yy",
+    "timeFormat": "HH:mm:ss",
+    "sampleData": "ICICI Bank Acct XX467 debited with Rs 21,160.00 on 29-Jul-25 & Acct XX724 credited.IMPS:521021138031. Call 18002662 for dispute or SMS BLOCK 467 to 9215676766",
+    "ignoreTemplate": false,
+    "ignoreMsg": false,
+    "tags": [
+      "IMPS"
+    ],
+    "createdAt": 1759836248
+  }
+}

@@ -1,0 +1,18 @@
+meta {
+  name: Filter by Header
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{core-service}}/core/v1/unknown-message-analyzer/filter-msg
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "possibleTransaction": false,
+    "header": "lOvesi"
+  }
+}

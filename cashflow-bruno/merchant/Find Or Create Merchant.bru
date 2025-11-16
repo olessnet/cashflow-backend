@@ -1,0 +1,17 @@
+meta {
+  name: Find Or Create Merchant
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{core-service}}/core/v1/merchant/get-or-create
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "merchantId": "YUM RESTAURANT"
+  }
+}

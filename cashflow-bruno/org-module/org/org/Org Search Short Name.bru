@@ -1,0 +1,22 @@
+meta {
+  name: Org Search Short Name
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{core-service}}/core/v1/org/searchByShortName/:name
+  body: json
+  auth: none
+}
+
+params:path {
+  name: FEDBNK
+}
+
+body:json {
+  {
+    "searchTerm":"FEDBNK",
+    "searchBy":"HEADER"
+  }
+}

@@ -1,0 +1,11 @@
+services:
+  code-server:
+    image: linuxserver/resilio-sync:latest
+    container_name: ops-resiliosync
+    restart: unless-stopped
+    volumes:
+      - /Users/srikrishna.s/mydrive/apps-data/resiliosync/config:/config
+      - /Users/srikrishna.s/mydrive/apps-data/resiliosync/data:/sync
+    ports:
+      - 8888:8888
+      - 5555:55555

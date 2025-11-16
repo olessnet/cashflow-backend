@@ -1,0 +1,26 @@
+meta {
+  name: Org Search Name
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{core-service}}/core/v1/org/searchByName/:name
+  body: json
+  auth: none
+}
+
+params:path {
+  name: Vodafone
+}
+
+body:json {
+  {
+    "searchTerm":"FEDBNK",
+    "searchBy":"HEADER"
+  }
+  
+  //     public static enum SearchBy {
+  //         ID, NAME, SHORT_NAME, HEADER
+  //     }
+}

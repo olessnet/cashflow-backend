@@ -1,0 +1,15 @@
+meta {
+  name: Delete Ignore String
+  type: http
+  seq: 2
+}
+
+delete {
+  url: {{core-service}}/core/v1/org-ignore-string/FEDBNK
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

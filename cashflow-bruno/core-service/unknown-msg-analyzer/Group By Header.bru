@@ -1,0 +1,19 @@
+meta {
+  name: Group By Header
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{core-service}}/core/v1/unknown-message-analyzer/headers
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "possibleTransaction": false,
+    "headerVerified": false,
+    "bankingHeader": false
+  }
+}

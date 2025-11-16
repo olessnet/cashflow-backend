@@ -1,0 +1,55 @@
+blackListedKeywords:
+  - tag: OTP Keywords
+    keywords:
+      - otp
+      - one time password
+      - authentication
+      - verification code
+      - netsecure
+  #  - tag: Sensitive Keywords
+  #    keywords:
+  #      - aadhaar
+  #      - login
+  #      - password
+  #      - activation
+  #      - validate
+  #      - registration
+  #      - bhim
+  #      - broker
+  - tag: non Keywords
+    keywords:
+      - postpaid
+      - prepaid
+      - out for delivery
+      - missed call from
+      - cyclone
+      - rainfall
+
+blacklistedRules:
+  - tag: RULE-01
+    description: reject any personal phone numbers
+    apply: HEADER
+    patterns:
+      - expression: '\+91\d{10}'
+      - expression: '0\d{10}'
+      - expression: '\d{10}'
+  - tag: RULE-02
+    description: reject any numerical numbers
+    apply: HEADER
+    patterns:
+      - expression: '\d+'
+      - expression: '\+\d+'
+      - expression: '\d{10}'
+  - tag: RULE-03
+    description: reject promotional sender ids
+    apply: HEADER
+    patterns:
+      - expression: '\D\D-\d\d\d\d\d\d'
+  - tag: RULE-04
+    description: reject any non english messages
+    apply: MESSAGE
+    patterns:
+      - expression: '[^\x00-\x7F]'
+        fullTextSearch: false
+      - expression: '[^\t\r\n\x20-\x7E]+'
+        fullTextSearch: false

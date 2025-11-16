@@ -1,0 +1,15 @@
+meta {
+  name: App Version Check
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{core-service}}/core/v1/app-version?version=0.0.8
+  body: none
+  auth: none
+}
+
+params:query {
+  version: 0.0.8
+}
